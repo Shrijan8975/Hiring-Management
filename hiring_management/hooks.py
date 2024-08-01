@@ -1,7 +1,7 @@
 app_name = "hiring_management"
 app_title = "Hiring Management"
 app_publisher = "ShrijanChavan"
-app_description = "App for making hiring easy"
+app_description = "App for made hiring easy"
 app_email = "shrijanchavan@gmail.com"
 app_license = "mit"
 # required_apps = []

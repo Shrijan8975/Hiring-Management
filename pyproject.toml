@@ -3,7 +3,7 @@ name = "hiring_management"
 authors = [
     { name = "ShrijanChavan", email = "shrijanchavan@gmail.com"}
 ]
-description = "App for making hiring easy"
+description = "App for made hiring easy"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]

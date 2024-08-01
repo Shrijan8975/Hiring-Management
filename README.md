@@ -1,6 +1,6 @@
 ### Hiring Management
 
-App for making hiring easy
+App for made hiring easy
 
 ### Installation
 
