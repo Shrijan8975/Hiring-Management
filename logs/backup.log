@@ -1,0 +1,43 @@
+Please specify --site sitename
+set -o pipefail; /usr/bin/mariadb-dump --user=_dce71f9d28e1a750 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _dce71f9d28e1a750 | /usr/bin/gzip >> ./hiring.localhost/private/backups/20240802_120002-hiring_localhost-database.sql.gz
+
+Backup Summary for hiring.localhost at 2024-08-02 12:00:02.645843
+Config  : /home/shrijan_chavan/kesula-bench/sites/hiring.localhost/private/backups/20240802_120002-hiring_localhost-site_config_backup.json 127.0B
+Database: /home/shrijan_chavan/kesula-bench/sites/hiring.localhost/private/backups/20240802_120002-hiring_localhost-database.sql.gz 224.5KiB
+Backup for Site hiring.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_dce71f9d28e1a750 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _dce71f9d28e1a750 | /usr/bin/gzip >> ./hiring.localhost/private/backups/20240803_120002-hiring_localhost-database.sql.gz
+
+Backup Summary for hiring.localhost at 2024-08-03 12:00:02.756698
+Config  : /home/shrijan_chavan/kesula-bench/sites/hiring.localhost/private/backups/20240803_120002-hiring_localhost-site_config_backup.json 127.0B
+Database: /home/shrijan_chavan/kesula-bench/sites/hiring.localhost/private/backups/20240803_120002-hiring_localhost-database.sql.gz 238.7KiB
+Backup for Site hiring.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_dce71f9d28e1a750 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _dce71f9d28e1a750 | /usr/bin/gzip >> ./hiring.localhost/private/backups/20240803_180002-hiring_localhost-database.sql.gz
+
+Backup Summary for hiring.localhost at 2024-08-03 18:00:02.917708
+Config  : /home/shrijan_chavan/kesula-bench/sites/hiring.localhost/private/backups/20240803_180002-hiring_localhost-site_config_backup.json 127.0B
+Database: /home/shrijan_chavan/kesula-bench/sites/hiring.localhost/private/backups/20240803_180002-hiring_localhost-database.sql.gz 243.4KiB
+Backup for Site hiring.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_dce71f9d28e1a750 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _dce71f9d28e1a750 | /usr/bin/gzip >> ./hiring.localhost/private/backups/20240820_180003-hiring_localhost-database.sql.gz
+
+Backup Summary for hiring.localhost at 2024-08-20 18:00:04.660649
+Config  : /home/shrijan_chavan/kesula-bench/sites/hiring.localhost/private/backups/20240820_180003-hiring_localhost-site_config_backup.json 127.0B
+Database: /home/shrijan_chavan/kesula-bench/sites/hiring.localhost/private/backups/20240820_180003-hiring_localhost-database.sql.gz 243.6KiB
+Backup for Site hiring.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_dce71f9d28e1a750 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _dce71f9d28e1a750 | /usr/bin/gzip >> ./hiring.localhost/private/backups/20240823_120002-hiring_localhost-database.sql.gz
+
+Backup Summary for hiring.localhost at 2024-08-23 12:00:03.517976
+Config  : /home/shrijan_chavan/kesula-bench/sites/hiring.localhost/private/backups/20240823_120002-hiring_localhost-site_config_backup.json 127.0B
+Database: /home/shrijan_chavan/kesula-bench/sites/hiring.localhost/private/backups/20240823_120002-hiring_localhost-database.sql.gz 243.6KiB
+Backup for Site hiring.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_dce71f9d28e1a750 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _dce71f9d28e1a750 | /usr/bin/gzip >> ./hiring.localhost/private/backups/20240826_180001-hiring_localhost-database.sql.gz
+
+Backup Summary for hiring.localhost at 2024-08-26 18:00:02.574691
+Config  : /home/shrijan_chavan/kesula-bench/sites/hiring.localhost/private/backups/20240826_180001-hiring_localhost-site_config_backup.json 127.0B
+Database: /home/shrijan_chavan/kesula-bench/sites/hiring.localhost/private/backups/20240826_180001-hiring_localhost-database.sql.gz 249.4KiB
+Backup for Site hiring.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_dce71f9d28e1a750 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _dce71f9d28e1a750 | /usr/bin/gzip >> ./hiring.localhost/private/backups/20240904_120001-hiring_localhost-database.sql.gz
+
+Backup Summary for hiring.localhost at 2024-09-04 12:00:02.670671
+Config  : /home/shrijan_chavan/kesula-bench/sites/hiring.localhost/private/backups/20240904_120001-hiring_localhost-site_config_backup.json 127.0B
+Database: /home/shrijan_chavan/kesula-bench/sites/hiring.localhost/private/backups/20240904_120001-hiring_localhost-database.sql.gz 249.7KiB
+Backup for Site hiring.localhost has been successfully completed

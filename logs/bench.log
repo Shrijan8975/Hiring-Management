@@ -1,0 +1,191 @@
+2024-08-01 17:53:47,035 DEBUG cd kesula-bench && python3 -m venv env
+2024-08-01 17:53:51,008 DEBUG cd kesula-bench && /home/shrijan_chavan/kesula-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-08-01 17:53:53,272 DEBUG cd kesula-bench && /home/shrijan_chavan/kesula-bench/env/bin/python -m pip install --quiet wheel
+2024-08-01 17:53:54,189 LOG Getting frappe
+2024-08-01 17:53:54,189 DEBUG cd kesula-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2024-08-01 17:53:59,261 LOG Installing frappe
+2024-08-01 17:53:59,262 DEBUG cd /home/shrijan_chavan/kesula-bench && /home/shrijan_chavan/kesula-bench/env/bin/python -m pip install --quiet --upgrade -e /home/shrijan_chavan/kesula-bench/apps/frappe 
+2024-08-01 17:54:37,150 DEBUG cd /home/shrijan_chavan/kesula-bench/apps/frappe && yarn install --check-files
+2024-08-01 17:55:13,435 DEBUG cd /home/shrijan_chavan/kesula-bench && sudo supervisorctl restart frappe:
+2024-08-01 17:55:13,680 WARNING cd /home/shrijan_chavan/kesula-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-01 17:55:13,681 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-08-01 17:55:13,681 DEBUG cd kesula-bench && bench build
+2024-08-01 17:55:13,839 INFO /usr/local/bin/bench build
+2024-08-01 17:55:35,792 LOG setting up backups
+2024-08-01 17:55:35,849 LOG backups were set up
+2024-08-01 17:55:35,849 INFO Bench kesula-bench initialized
+2024-08-01 17:59:27,525 INFO /usr/local/bin/bench start
+2024-08-01 17:59:27,964 INFO /usr/local/bin/bench watch
+2024-08-01 17:59:27,970 INFO /usr/local/bin/bench schedule
+2024-08-01 17:59:27,975 INFO /usr/local/bin/bench serve --port 8002
+2024-08-01 17:59:27,975 INFO /usr/local/bin/bench worker
+2024-08-01 18:00:01,712 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-01 18:02:47,454 INFO /usr/local/bin/bench start
+2024-08-01 18:02:47,866 INFO /usr/local/bin/bench worker
+2024-08-01 18:02:47,875 INFO /usr/local/bin/bench serve --port 8002
+2024-08-01 18:02:47,876 INFO /usr/local/bin/bench watch
+2024-08-01 18:02:47,938 INFO /usr/local/bin/bench schedule
+2024-08-01 18:06:23,635 INFO /usr/local/bin/bench find .
+2024-08-01 18:07:57,000 INFO /usr/local/bin/bench new-app hiring_management
+2024-08-01 18:07:57,005 LOG creating new app hiring_management
+2024-08-01 18:10:52,450 LOG Installing hiring_management
+2024-08-01 18:10:52,452 DEBUG cd /home/shrijan_chavan/kesula-bench && /home/shrijan_chavan/kesula-bench/env/bin/python -m pip install --quiet --upgrade -e /home/shrijan_chavan/kesula-bench/apps/hiring_management 
+2024-08-01 18:10:55,191 DEBUG bench build --app hiring_management
+2024-08-01 18:10:55,323 INFO /usr/local/bin/bench build --app hiring_management
+2024-08-01 18:10:56,383 WARNING bench build --app hiring_management executed with exit code 1
+2024-08-01 18:10:56,384 WARNING /usr/local/bin/bench new-app hiring_management executed with exit code 1
+2024-08-01 18:12:07,565 INFO /usr/local/bin/bench new-app hiring_management
+2024-08-01 18:12:07,571 LOG creating new app hiring_management
+2024-08-01 18:13:21,277 LOG Installing hiring_management
+2024-08-01 18:13:21,279 DEBUG cd /home/shrijan_chavan/kesula-bench && /home/shrijan_chavan/kesula-bench/env/bin/python -m pip install --quiet --upgrade -e /home/shrijan_chavan/kesula-bench/apps/hiring_management 
+2024-08-01 18:13:23,966 DEBUG bench build --app hiring_management
+2024-08-01 18:13:24,102 INFO /usr/local/bin/bench build --app hiring_management
+2024-08-01 18:13:35,810 DEBUG cd /home/shrijan_chavan/kesula-bench && sudo supervisorctl restart frappe:
+2024-08-01 18:13:36,048 WARNING cd /home/shrijan_chavan/kesula-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-01 18:13:36,048 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-08-01 18:18:38,216 INFO /usr/local/bin/bench new-site hiring.localhost
+2024-08-01 18:24:14,444 INFO /usr/local/bin/bench --site hiring.localhost add-to-hosts
+2024-08-01 18:25:49,773 INFO /usr/local/bin/bench start
+2024-08-01 18:25:50,256 INFO /usr/local/bin/bench watch
+2024-08-01 18:25:50,269 INFO /usr/local/bin/bench serve --port 8002
+2024-08-01 18:25:50,272 INFO /usr/local/bin/bench worker
+2024-08-01 18:25:50,276 INFO /usr/local/bin/bench schedule
+2024-08-01 18:36:02,898 INFO /usr/local/bin/bench --site hiring.localhost install-app hiring_management
+2024-08-01 18:37:18,074 INFO /usr/local/bin/bench --site hiring.localhost list-apps
+2024-08-01 18:39:17,128 INFO /usr/local/bin/bench --site hiring.localhost console
+2024-08-01 18:42:03,893 INFO /usr/local/bin/bench --site hiring.localhost mariadb
+2024-08-01 18:46:50,869 INFO /usr/local/bin/bench --site hiring.localhost backup
+2024-08-01 18:48:36,146 INFO /usr/local/bin/bench --help
+2024-08-01 18:50:52,016 INFO /usr/local/bin/bench set-config -g developer_mode true
+2024-08-01 18:51:50,373 INFO /usr/local/bin/bench start
+2024-08-01 18:51:50,744 INFO /usr/local/bin/bench worker
+2024-08-01 18:51:50,747 INFO /usr/local/bin/bench serve --port 8002
+2024-08-01 18:51:50,747 INFO /usr/local/bin/bench schedule
+2024-08-01 18:51:50,752 INFO /usr/local/bin/bench watch
+2024-08-02 06:58:35,152 INFO /usr/local/bin/bench start
+2024-08-02 06:58:35,561 INFO /usr/local/bin/bench watch
+2024-08-02 06:58:35,562 INFO /usr/local/bin/bench worker
+2024-08-02 06:58:35,566 INFO /usr/local/bin/bench serve --port 8002
+2024-08-02 06:58:35,574 INFO /usr/local/bin/bench schedule
+2024-08-02 10:24:41,403 INFO /usr/local/bin/bench generate-module candidates
+2024-08-02 10:31:21,596 INFO /usr/local/bin/bench start
+2024-08-02 10:31:22,161 INFO /usr/local/bin/bench worker
+2024-08-02 10:31:22,163 INFO /usr/local/bin/bench serve --port 8002
+2024-08-02 10:31:22,166 INFO /usr/local/bin/bench watch
+2024-08-02 10:31:22,182 INFO /usr/local/bin/bench schedule
+2024-08-02 11:26:00,296 INFO /usr/local/bin/bench --site hiring.localhost mariadb
+2024-08-02 12:00:02,001 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-02 12:18:18,859 INFO /usr/local/bin/bench --site hiring.localhost mariadb
+2024-08-02 14:25:06,453 INFO /usr/local/bin/bench --site hiring.localhost mariadb
+2024-08-02 17:32:39,843 INFO /usr/local/bin/bench get-app --branch version-14 erpnext
+2024-08-02 17:32:40,809 LOG Getting erpnext
+2024-08-02 17:32:40,810 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2024-08-02 17:32:56,866 LOG Installing erpnext
+2024-08-02 17:32:56,866 DEBUG cd /home/shrijan_chavan/kesula-bench && /home/shrijan_chavan/kesula-bench/env/bin/python -m pip install --quiet --upgrade -e /home/shrijan_chavan/kesula-bench/apps/erpnext 
+2024-08-02 17:33:10,517 DEBUG cd /home/shrijan_chavan/kesula-bench && /home/shrijan_chavan/kesula-bench/env/bin/python -m pip install --quiet --upgrade hypothesis~=6.31.0 
+2024-08-02 17:33:15,187 DEBUG cd /home/shrijan_chavan/kesula-bench/apps/erpnext && yarn install --check-files
+2024-08-02 17:33:18,477 DEBUG bench build --app erpnext
+2024-08-02 17:33:18,619 INFO /usr/local/bin/bench build --app erpnext
+2024-08-02 17:33:18,935 WARNING bench build --app erpnext executed with exit code 1
+2024-08-02 17:33:18,935 WARNING /usr/local/bin/bench get-app --branch version-14 erpnext executed with exit code 1
+2024-08-02 17:34:17,678 INFO /usr/local/bin/bench get-app --branch version-14 erpnext
+2024-08-02 17:34:22,283 INFO App moved from apps/erpnext to archived/apps/erpnext-2024-08-02
+2024-08-02 17:34:22,286 LOG Getting erpnext
+2024-08-02 17:34:22,287 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2024-08-02 17:34:37,614 LOG Installing erpnext
+2024-08-02 17:34:37,615 DEBUG cd /home/shrijan_chavan/kesula-bench && /home/shrijan_chavan/kesula-bench/env/bin/python -m pip install --quiet --upgrade -e /home/shrijan_chavan/kesula-bench/apps/erpnext 
+2024-08-02 17:34:42,276 DEBUG cd /home/shrijan_chavan/kesula-bench && /home/shrijan_chavan/kesula-bench/env/bin/python -m pip install --quiet --upgrade hypothesis~=6.31.0 
+2024-08-02 17:34:44,264 DEBUG cd /home/shrijan_chavan/kesula-bench/apps/erpnext && yarn install --check-files
+2024-08-02 17:34:45,034 DEBUG bench build --app erpnext
+2024-08-02 17:34:45,139 INFO /usr/local/bin/bench build --app erpnext
+2024-08-02 17:34:45,384 WARNING bench build --app erpnext executed with exit code 1
+2024-08-02 17:34:45,384 WARNING /usr/local/bin/bench get-app --branch version-14 erpnext executed with exit code 1
+2024-08-02 17:35:42,648 INFO /usr/local/bin/bench get-app erpnext --branch version-14
+2024-08-02 17:35:46,497 INFO App moved from apps/erpnext to archived/apps/erpnext-2024-08-02_1
+2024-08-02 17:35:46,501 LOG Getting erpnext
+2024-08-02 17:35:46,501 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2024-08-02 17:36:06,611 LOG Installing erpnext
+2024-08-02 17:36:06,612 DEBUG cd /home/shrijan_chavan/kesula-bench && /home/shrijan_chavan/kesula-bench/env/bin/python -m pip install --quiet --upgrade -e /home/shrijan_chavan/kesula-bench/apps/erpnext 
+2024-08-02 17:36:10,134 DEBUG cd /home/shrijan_chavan/kesula-bench && /home/shrijan_chavan/kesula-bench/env/bin/python -m pip install --quiet --upgrade hypothesis~=6.31.0 
+2024-08-02 17:36:12,180 DEBUG cd /home/shrijan_chavan/kesula-bench/apps/erpnext && yarn install --check-files
+2024-08-02 17:36:12,865 DEBUG bench build --app erpnext
+2024-08-02 17:36:12,976 INFO /usr/local/bin/bench build --app erpnext
+2024-08-02 17:36:13,258 WARNING bench build --app erpnext executed with exit code 1
+2024-08-02 17:36:13,259 WARNING /usr/local/bin/bench get-app erpnext --branch version-14 executed with exit code 1
+2024-08-02 17:38:57,732 INFO /usr/local/bin/bench get-app --branch version-14 erpnext --resolve-deps
+2024-08-02 17:39:02,393 LOG Getting erpnext
+2024-08-02 17:39:02,393 DEBUG cd ./apps && git clone erpnext --branch version-14 --depth 1 --origin upstream
+2024-08-02 17:39:02,396 WARNING cd ./apps && git clone erpnext --branch version-14 --depth 1 --origin upstream executed with exit code 128
+2024-08-02 17:39:02,396 WARNING /usr/local/bin/bench get-app --branch version-14 erpnext --resolve-deps executed with exit code 1
+2024-08-02 17:39:34,604 INFO /usr/local/bin/bench start
+2024-08-02 17:39:35,131 INFO /usr/local/bin/bench schedule
+2024-08-02 17:39:35,133 INFO /usr/local/bin/bench worker
+2024-08-02 17:39:35,140 INFO /usr/local/bin/bench serve --port 8002
+2024-08-02 17:39:35,143 INFO /usr/local/bin/bench watch
+2024-08-02 17:39:40,471 INFO /usr/local/bin/bench start
+2024-08-02 17:39:40,802 INFO /usr/local/bin/bench schedule
+2024-08-02 17:39:40,803 INFO /usr/local/bin/bench serve --port 8002
+2024-08-02 17:39:40,806 INFO /usr/local/bin/bench watch
+2024-08-02 17:39:40,815 INFO /usr/local/bin/bench worker
+2024-08-02 17:40:59,618 INFO /usr/local/bin/bench get-app --branch version-13 erpnext --resolve-deps
+2024-08-02 17:41:01,361 LOG Getting erpnext
+2024-08-02 17:41:01,361 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-13 --depth 1 --origin upstream
+2024-08-02 17:41:28,999 LOG Installing erpnext
+2024-08-02 17:41:29,000 DEBUG cd /home/shrijan_chavan/kesula-bench && /home/shrijan_chavan/kesula-bench/env/bin/python -m pip install --quiet --upgrade -e /home/shrijan_chavan/kesula-bench/apps/erpnext 
+2024-08-02 17:41:45,444 DEBUG cd /home/shrijan_chavan/kesula-bench/apps/erpnext && yarn install --check-files
+2024-08-02 17:41:46,120 DEBUG bench build --app erpnext
+2024-08-02 17:41:46,236 INFO /usr/local/bin/bench build --app erpnext
+2024-08-02 17:41:46,547 WARNING bench build --app erpnext executed with exit code 1
+2024-08-02 17:41:46,548 WARNING /usr/local/bin/bench get-app --branch version-13 erpnext --resolve-deps executed with exit code 1
+2024-08-03 07:51:19,913 INFO /usr/local/bin/bench --site hiring.localhost migrate
+2024-08-03 07:57:59,247 INFO /usr/local/bin/bench --site hiring.localhost migrate
+2024-08-03 07:58:28,322 INFO /usr/local/bin/bench start
+2024-08-03 07:58:28,511 INFO /usr/local/bin/bench watch
+2024-08-03 07:58:28,512 INFO /usr/local/bin/bench schedule
+2024-08-03 07:58:28,512 INFO /usr/local/bin/bench worker
+2024-08-03 07:58:28,517 INFO /usr/local/bin/bench serve --port 8002
+2024-08-03 08:04:01,912 INFO /usr/local/bin/bench --site hiring.localhost install-app erpnext
+2024-08-03 08:05:50,024 INFO /usr/local/bin/bench --site hiring.localhost backup
+2024-08-03 08:05:59,452 INFO /usr/local/bin/bench --site hiring.localhost reinstall
+2024-08-03 08:08:16,685 INFO /usr/local/bin/bench --site hiring.localhost install-app erpnext
+2024-08-03 08:11:06,569 INFO /usr/local/bin/bench --site hiring.localhost install-app erpnext
+2024-08-03 08:11:17,258 INFO /usr/local/bin/bench list-apps
+2024-08-03 08:13:12,204 INFO /usr/local/bin/bench --site hiring.localhost backup
+2024-08-03 08:13:18,892 INFO /usr/local/bin/bench --site hiring.localhost mysql
+2024-08-03 08:13:33,986 INFO /usr/local/bin/bench --site hiring.localhost mariadb
+2024-08-03 08:15:13,766 INFO /usr/local/bin/bench --site hiring.localhost install-app erpnext
+2024-08-03 08:21:09,192 INFO /usr/local/bin/bench start
+2024-08-03 08:21:56,487 INFO /usr/local/bin/bench start
+2024-08-03 08:22:41,228 INFO /usr/local/bin/bench stop
+2024-08-03 10:17:51,434 INFO /usr/local/bin/bench start
+2024-08-03 10:17:51,827 INFO /usr/local/bin/bench schedule
+2024-08-03 10:17:51,829 INFO /usr/local/bin/bench worker
+2024-08-03 10:17:51,833 INFO /usr/local/bin/bench serve --port 8002
+2024-08-03 10:17:51,839 INFO /usr/local/bin/bench watch
+2024-08-03 10:32:41,035 INFO /usr/local/bin/bench --site hiring.localhost migrate
+2024-08-03 10:33:17,200 INFO /usr/local/bin/bench --site hiring.localhost clear-cache
+2024-08-03 10:34:31,675 INFO /usr/local/bin/bench --site hiring.localhost list-apps
+2024-08-03 10:38:29,545 INFO /usr/local/bin/bench --site hiring.localhost log
+2024-08-03 11:07:47,214 INFO /usr/local/bin/bench --site hiring.localhost mariadb
+2024-08-03 11:15:12,200 INFO /usr/local/bin/bench --site hiring.localhost mariadb
+2024-08-03 12:00:01,959 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-03 18:00:02,158 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-20 18:00:02,103 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-23 12:00:01,533 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-26 15:02:49,895 INFO /usr/local/bin/bench start
+2024-08-26 15:02:50,266 INFO /usr/local/bin/bench watch
+2024-08-26 15:02:50,268 INFO /usr/local/bin/bench serve --port 8002
+2024-08-26 15:02:50,271 INFO /usr/local/bin/bench schedule
+2024-08-26 15:02:50,271 INFO /usr/local/bin/bench worker
+2024-08-26 18:00:01,574 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-04 10:41:19,527 INFO /usr/local/bin/bench start
+2024-09-04 10:41:19,756 INFO /usr/local/bin/bench schedule
+2024-09-04 10:41:19,757 INFO /usr/local/bin/bench serve --port 8002
+2024-09-04 10:41:19,760 INFO /usr/local/bin/bench watch
+2024-09-04 10:41:19,773 INFO /usr/local/bin/bench worker
+2024-09-04 12:00:01,662 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-05 10:47:06,104 INFO /usr/local/bin/bench start
+2024-09-05 10:47:06,309 INFO /usr/local/bin/bench watch
+2024-09-05 10:47:06,310 INFO /usr/local/bin/bench worker
+2024-09-05 10:47:06,313 INFO /usr/local/bin/bench schedule
+2024-09-05 10:47:06,326 INFO /usr/local/bin/bench serve --port 8002

@@ -1,0 +1,16 @@
+_HiStOrY_V2_
+select\040name\040from\040'tabuser';
+select\040name\040from\040`tabuser`;
+select\040name\040from\040`tabUser`;
+desc\040tabCandidate
+desc\040tabCandidates
+desc\040tabApplication
+q
+select\040*\040from\040tabApplication;
+select\040*\040from\040ApplicationStatus;
+select\040*\040from\040tabApplicationStatus;
+select\040*\040from\040tabCareerPage;
+select\040*\040from\040tabCandidateLogin;
+delete\040from\040`tabModule\040Def`\040where\040`name`\040=\040'Accounta';
+select\040*\040from\040tabApplication;
+select\040*\040from\040tabApplicationStatus;

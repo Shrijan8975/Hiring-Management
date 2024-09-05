@@ -1,0 +1,21 @@
+2024-09-05 10:47:07,503 ERROR frappe Unable to load translations
+Site: None
+Form Dict: None
+Traceback (most recent call last):
+  File "/home/shrijan_chavan/kesula-bench/apps/frappe/frappe/translate.py", line 155, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+AttributeError: 'NoneType' object has no attribute 'hget'
+2024-09-05 10:47:07,504 ERROR frappe Unable to load translations
+Site: None
+Form Dict: None
+Traceback (most recent call last):
+  File "/home/shrijan_chavan/kesula-bench/apps/frappe/frappe/translate.py", line 155, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+AttributeError: 'NoneType' object has no attribute 'hget'
+2024-09-05 10:47:07,504 ERROR frappe Unable to load translations
+Site: None
+Form Dict: None
+Traceback (most recent call last):
+  File "/home/shrijan_chavan/kesula-bench/apps/frappe/frappe/translate.py", line 155, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+AttributeError: 'NoneType' object has no attribute 'hget'
