@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-03 11:57:13.470560",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "reviewbyhr",
+  "application",
+  "hr",
+  "status",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "reviewbyhr",
+   "fieldtype": "Section Break",
+   "label": "ReviewByHR"
+  },
+  {
+   "fieldname": "application",
+   "fieldtype": "Link",
+   "label": "Application",
+   "options": "Application"
+  },
+  {
+   "fieldname": "hr",
+   "fieldtype": "Link",
+   "label": "HR",
+   "options": "Candidate"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Final Review\nHired\nRejected"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Text",
+   "label": "Comments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-03 12:01:08.477357",
+ "modified_by": "Administrator",
+ "module": "hrs",
+ "name": "HRReview",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
